@@ -1,21 +1,20 @@
-// 获取页面元素
+// 获取切换按钮和 body
 const themeToggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
 
-// 检查本地存储中是否有模式设置
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
-    body.classList.add(currentTheme);
+// 从 localStorage 检查用户之前的主题偏好
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    body.classList.add(savedTheme);
 }
 
-// 点击按钮切换模式
+// 点击按钮切换主题
 themeToggleBtn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    
-    // 将选择的模式保存到本地存储中
     if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark-mode');
+        body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light-mode'); // 存储为白天模式
     } else {
-        localStorage.removeItem('theme');
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark-mode'); // 存储为黑夜模式
     }
 });
