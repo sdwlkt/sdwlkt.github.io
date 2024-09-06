@@ -8,17 +8,19 @@ body {
 }
 
 header {
-    background-image: url('../images/hero-background.jpg'); /* 添加背景图片 */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* 动态渐变背景 */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
-    padding: 100px 0;
 }
 
 .hero-section h1 {
     font-size: 48px;
     margin: 0;
+    animation: textFadeIn 2s ease-out;
 }
 
 .hero-section p {
@@ -33,11 +35,17 @@ header {
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cta-btn:hover {
     background-color: #2980b9;
+}
+
+@keyframes textFadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 /* 内容部分样式 */
@@ -45,12 +53,17 @@ header {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
+    color: #ff7e5f;
 }
 
 /* 项目卡片样式 */
@@ -78,7 +91,7 @@ h2 {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .project-btn:hover {
@@ -95,3 +108,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
