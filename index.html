@@ -4,41 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李嘉彤的个人主页</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- 连接到样式表 -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="hero-section">
-            <h1>你好，我是李嘉彤</h1>
-            <p>工业工程专业学生 | 专注于生产管理、质量控制与数据分析</p>
-            <a href="#projects" class="cta-btn">查看我的项目</a>
+    <nav class="navbar">
+        <h1 class="logo">LJT.</h1>
+        <ul>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+        <div class="theme-toggle" id="theme-toggle">
+            <span>🌞</span> <!-- 默认显示白天图标 -->
         </div>
-        <button id="theme-toggle" class="theme-toggle-btn">切换模式</button> <!-- 模式切换按钮 -->
+    </nav>
+
+    <header class="hero-section">
+        <h1>你好，我是李嘉彤。</h1>
+        <p>工业工程专业学生 | 专注于生产管理、质量控制与数据分析</p>
+        <a href="#" class="cta-btn">查看简历</a>
     </header>
 
-    <section id="projects" class="content-section">
+    <section id="projects" class="projects-section">
         <h2>我的项目</h2>
         <div class="project-card">
-            <h3>挑战杯创业计划竞赛</h3>
-            <p>负责市场分析与项目规划，获得经管学院一等奖。</p>
+            <h3>项目 1</h3>
+            <p>描述你的第一个项目</p>
         </div>
         <div class="project-card">
-            <h3>互联网+ 创新创业大赛</h3>
-            <p>负责市场调研与数据分析，获得院级三等奖。</p>
+            <h3>项目 2</h3>
+            <p>描述你的第二个项目</p>
+        </div>
+        <div class="project-card">
+            <h3>项目 3</h3>
+            <p>描述你的第三个项目</p>
         </div>
     </section>
 
-    <section id="tech-stack" class="content-section">
-        <h2>技术栈</h2>
-        <p>熟练掌握：HTML, CSS, JavaScript, FlexSim, CAD, MySQL, Excel等</p>
+    <section id="skills" class="skills-section">
+        <h2>技能</h2>
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">FlexSim</div>
+        <div class="skill-item">Excel</div>
     </section>
 
-    <section id="contact" class="content-section">
+    <section id="contact" class="contact-section">
         <h2>联系我</h2>
         <p>邮箱: 464322789@qq.com</p>
         <p>电话: 15620615070</p>
     </section>
 
-    <script src="js/theme.js"></script> <!-- 连接切换模式的脚本 -->
+    <script src="js/theme.js"></script>
 </body>
 </html>
+
