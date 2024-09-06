@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李嘉彤的个人主页</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- 连接到样式表 -->
 </head>
 <body>
     <header>
-        <h1>你好，我是李嘉彤</h1>
-        <p>天津科技大学工业工程专业本科生（预计2025年毕业）</p>
-        <p>擅长：项目管理、数据分析、系统优化与建模</p>
+        <div class="hero-section">
+            <h1>你好，我是李嘉彤</h1>
+            <p>全栈开发工程师 | 专注于 JavaScript、Python、React、Node.js</p>
+            <a href="#projects" class="cta-btn">查看我的项目</a>
+        </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="content-section">
         <h2>关于我</h2>
-        <p>主修课程包括：工程管理、生产与运作管理、质量控制与管理、系统工程等。</p>
+        <p>我目前是天津科技大学的工业工程专业学生，预计2025年毕业，主修工程管理、生产与运作管理、系统工程等课程。</p>
     </section>
 
-    <section id="projects">
-        <h2>实习与工作经历</h2>
-        <ul>
-            <li>天津中德应用技术大学中西机床培训中心 - 机床操作实习生</li>
-            <li>天津膜天膜科技股份有限公司 - 质量管理与生产实习生</li>
-            <li>威仕得(天津)机电设备有限公司 - 技术支持实习生</li>
-        </ul>
+    <section id="projects" class="content-section">
+        <h2>我的项目</h2>
+        <div class="project-card">
+            <h3>挑战杯创业计划竞赛</h3>
+            <p>获得经管学院一等奖，负责市场分析与项目规划。</p>
+            <a href="https://github.com/yourgithub/project1" class="project-btn">查看项目</a>
+        </div>
+        <div class="project-card">
+            <h3>互联网+ 创新创业大赛</h3>
+            <p>获得院级三等奖，负责市场调研与数据分析。</p>
+            <a href="https://github.com/yourgithub/project2" class="project-btn">查看项目</a>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="content-section">
         <h2>联系我</h2>
         <p>邮箱: 464322789@qq.com</p>
+        <p>电话: 15620615070</p>
     </section>
+
+    <footer>
+        <p>&copy; 2024 李嘉彤的个人主页</p>
+    </footer>
 </body>
 </html>
